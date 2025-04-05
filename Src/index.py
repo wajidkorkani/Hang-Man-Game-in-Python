@@ -4,7 +4,7 @@ number = random.randint(1, 100)
 
 print("Guss the number: ")
 
-chances = 3
+chances = 5
 
 while(chances > 0):
     gussedNumber = int(input())
@@ -14,7 +14,7 @@ while(chances > 0):
         print("You won!")
         chances = 0
         if(answer == "Yes"):
-            chances = 3
+            chances = 5
             number = random.randint(1, 100)
     
     elif(chances < 1 and gussedNumber != number):
@@ -22,7 +22,7 @@ while(chances > 0):
         print("Would you like to try again?")
         answer = input().capitalize()
         if(answer == "Yes"):
-            chances = 3
+            chances = 5
             number = random.randint(1, 100)
     else:
         print("Wrong")
